@@ -53,6 +53,9 @@ const stormNoitalics = {
 }
 
 function schema({ colors, styles }) {
+  // https://chatgpt.com/share/676df468-2ae4-800c-aedb-a7be996b910f
+  const peekViewEditorStickyScrollBackground = '#1d202b'
+
   return `{
     "name": "poimandres dark theme",
     "type": "dark",
@@ -172,6 +175,7 @@ function schema({ colors, styles }) {
       "peekView.border": "${colors.black}30",
       "peekViewEditor.background": "${colors.gray}05",
       "peekViewEditorGutter.background": "${colors.gray}05",
+      "peekViewEditorStickyScroll.background": "${peekViewEditorStickyScrollBackground}",
       "peekViewResult.background": "${colors.gray}05",
       "peekViewTitle.background": "${colors.gray}05",
       "peekViewTitleDescription.foreground": "${colors.gray}60",
